@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px #ccc;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__left img {
+    height: 50px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 221, 221);
+    border-radius: 20px;
+    padding: 0px 10px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.header__search input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    min-width: 200px;
+}
+
+.header__middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__option {
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.header__option:hover {
+    border-radius: 20px;
+    background-color: rgb(223, 221, 221);
+}
+
+.header__option svg {
+    color: gray;
+}
+
+.header__option svg:hover {
+    color: #2e81f4;
+}
+
+.header__option--active {
+    position: relative;
+}
+
+.header__option--active svg {
+    color: #2e81f4;
+}
+
+.header__option--active:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-color: #2e81f4;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info h5 {
+    margin-right: 20px;
+}
+
+.header__info .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.header__right .MuiButtonBase-root {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    background-color: rgb(223, 221, 221);
+    color: #000;
+}
